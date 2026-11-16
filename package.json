@@ -1,5 +1,5 @@
 {
-  "name": "fusion-starter",
+  "name": "vybeformiq",
   "private": true,
   "type": "module",
   "scripts": {
@@ -89,7 +89,8 @@
     "typescript": "^5.9.2",
     "vaul": "^1.1.2",
     "vite": "^8.0.2",
-    "vitest": "^4.1.0"
+    "vitest": "^4.1.0",
+    "zustand": "^5.1.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

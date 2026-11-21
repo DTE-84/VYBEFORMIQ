@@ -2,6 +2,10 @@
 
 **Sound. Reimagined.**
 
+**Live:** [vybeformiq.vercel.app](https://vybeformiq.vercel.app)
+
+![VYBEFORMIQ in Spectrum mode](marketing/vybeformiq-spectrum.png)
+
 An audio-reactive visualizer that runs in the browser. Pick a sound source,
 pick a visual mode, and the whole stage moves with the bass, mids and highs.
 Audio is analysed locally and never uploaded.
@@ -19,7 +23,7 @@ Audio is analysed locally and never uploaded.
 - **This device**: share a tab or screen with audio on (Spotify, Pandora, YouTube, anything already playing). Desktop Chrome and Edge.
 - **Microphone**: reacts to the room.
 - **Audio files**: choose files or drop them on the page.
-- **Creator Studio**: tracks that ship with the site, listed in `client/data/tracks.ts`.
+- **Creator Studio**: tracks that ship with the site, listed in `client/data/tracks.ts`. Hidden while the list is empty.
 
 ## Controls
 
@@ -44,7 +48,8 @@ client/
   store/              # Settings and saved setups
   data/               # Creator Studio track list
   pages/Index.tsx     # The studio page
-public/               # MP3 tracks and static assets
+public/               # Static assets, including the link-preview image
+marketing/            # Screenshots and demo recordings (videos stay out of git)
 ```
 
 ## Development

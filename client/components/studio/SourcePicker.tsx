@@ -70,12 +70,14 @@ export default function SourcePicker() {
             detail="Choose files, or drop them anywhere on this page."
             onClick={pickFiles}
           />
-          <Option
-            icon={Disc3}
-            title="Play a featured track"
-            detail="Start with something from the Creator Studio."
-            onClick={() => playQueue(FEATURED_TRACKS, 0)}
-          />
+          {FEATURED_TRACKS.length > 0 && (
+            <Option
+              icon={Disc3}
+              title="Play a featured track"
+              detail="Start with something from the Creator Studio."
+              onClick={() => playQueue(FEATURED_TRACKS, 0)}
+            />
+          )}
         </div>
       </div>
     </div>

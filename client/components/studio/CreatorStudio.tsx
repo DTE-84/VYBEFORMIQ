@@ -59,9 +59,11 @@ export default function CreatorStudio({ onClose }: { onClose: () => void }) {
                     >
                       {track.title}
                     </span>
-                    <span className="block truncate text-xs text-zinc-400">
-                      {track.artist}
-                    </span>
+                    {track.artist && (
+                      <span className="block truncate text-xs text-zinc-400">
+                        {track.artist}
+                      </span>
+                    )}
                   </span>
                   <span className="ml-auto font-mono text-[10px] text-zinc-600">
                     {String(i + 1).padStart(2, "0")}
@@ -72,7 +74,7 @@ export default function CreatorStudio({ onClose }: { onClose: () => void }) {
           })}
         </ul>
         <p className="px-2 pb-2 pt-4 text-xs leading-relaxed text-zinc-500">
-          Original recordings from Keys Beats. New releases will show up here.
+          Featured tracks to try the visuals with. Artists will be able to add their own releases here.
         </p>
       </div>
     </aside>

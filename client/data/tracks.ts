@@ -6,10 +6,8 @@ export interface Track {
 
 /**
  * Creator Studio: tracks that ship with the site. Drop new files in /public
- * and list them here.
+ * and list them here, e.g. { title: "Song", artist: "Artist", src: "/song.mp3" }.
+ * While this list is empty the Creator Studio button and the featured-track
+ * option are hidden.
  */
-export const FEATURED_TRACKS: Track[] = [
-  { title: "Nexus Flow", artist: "Keys Beats", src: "/nexus-flow.mp3" },
-  { title: "Signal Clarity", artist: "Keys Beats", src: "/signal-clarity.mp3" },
-  { title: "Kinetic Neon", artist: "Keys Beats", src: "/kinetic-neon.mp3" },
-];
+export const FEATURED_TRACKS: Track[] = [];

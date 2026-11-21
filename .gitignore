@@ -28,3 +28,8 @@ dist-ssr
 
 .vercel
 .env*
+
+# Marketing recordings are too large for git; keep them locally
+marketing/*.mp4
+marketing/*.mov
+marketing/*.webm

@@ -1,5 +1,6 @@
 import { Disc3, Maximize, Minimize, SlidersHorizontal } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { FEATURED_TRACKS } from "@/data/tracks";
 import { MODES, useSettings } from "@/store/settings";
 
 function BarButton({
@@ -59,9 +60,11 @@ export default function TopBar({
       </div>
 
       <div className="flex items-center gap-2 sm:order-3">
-        <BarButton label="Creator Studio" active={creatorOpen} onClick={onToggleCreator}>
-          <Disc3 className="h-4 w-4" />
-        </BarButton>
+        {FEATURED_TRACKS.length > 0 && (
+          <BarButton label="Creator Studio" active={creatorOpen} onClick={onToggleCreator}>
+            <Disc3 className="h-4 w-4" />
+          </BarButton>
+        )}
         <BarButton label="Controls" active={controlsOpen} onClick={onToggleControls}>
           <SlidersHorizontal className="h-4 w-4" />
         </BarButton>
